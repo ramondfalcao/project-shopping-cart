@@ -159,7 +159,13 @@ body {
  .item:hover {
   border: #13ad4e 0.2em solid;
  }
- 
+
+ .cart__item {
+   text-align: center;
+   margin-top: 10px;
+  
+ }
+
  /* BUTTON CARDS */
 
  .item .item__add {
@@ -213,15 +219,30 @@ body {
 
 /* Price Cart */
 
+.subtotal-price {
+  display: flex;
+  margin-bottom: 10px;
+}
+.subtotal {
+  font-weight: bolder;
+  font-size: larger;
+  margin-right: 5px;
+}
+ 
+
 .total-price {
   text-align: center;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  font-weight: bolder;
+  font-size: larger;
 }
+
 
 /* Buy Button */
 
 .buy-cart {
   outline: 0;
+  cursor: pointer;
   border: 0;
   display: flex;
   flex-direction: column;
