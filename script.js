@@ -65,7 +65,7 @@ function createCartItemElement({ name, salePrice, image }) {
   const li = document.createElement('ol');
   // const img = createProductImageElement(image);
   li.className = 'cart__item';
-  li.appendChild(createProductImageElement(image));
+  const img = li.appendChild(createProductImageElement(image));
   li.innerText = `${name}
   PRICE: $${salePrice}`;
   li.addEventListener('click', cartItemClickListener);
